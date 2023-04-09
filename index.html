@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>GYXU</title>
+</head>
+<body>
+    <form name=loading> 
+        <p align=center> <font color="#0066ff" size="2">Loading</font><font color="#0066ff" size="2" face="Arial">...</font>
+        <input type=text name=chart size=46 style="font-family:Arial; font-weight:bolder; color:#0066ff; background-color:#fef4d9; padding:0px; border-style:none;"> 
+        <input type=text name=percent size=47 style="color:#0066ff; text-align:center; border-width:medium; border-style:none;"> 
+        <script>
+            let bar=0;
+            const line="||";
+            let amount="||";
+
+            count();
+
+            function count(){
+                bar=bar+2
+                amount =amount + line
+                document.loading.chart.value=amount
+                document.loading.percent.value=bar+"%"
+                if (bar<99)
+                {setTimeout("count()",10);}
+                else
+                {window.location = "https://designasabaker.github.io/react-tailwindcss-portfolio/";}
+            }
+        </script> 
+     </p> 
+    </form>
+</body>
+</html>
