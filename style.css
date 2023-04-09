@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: courier new ,sans-serif;
+    color:black;
+    background: white;
+    position: relative;
+}
+
+#loadingForm{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color:none;
+}
+
+#chart{
+    display: inline-block;
+    background-color:black; 
+    color: white;
+    border-style:none;
+    width: 350px;
+}
+
+#percent{
+    display: inline-block;
+    text-align:center; 
+    border-width:medium; 
+    border-style:none;
+    background-color:none;
+    width: 30px;
+}
