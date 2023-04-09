@@ -14,12 +14,27 @@ body{
 #loadingForm{
     display: flex;
     flex-direction: row;
+    align-items: center;
     position: absolute;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     background-color:none;
 }
+
+@media screen and (max-width: 600px) {
+    #loadingForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        background-color:none;
+    }
+}
+    
 
 #chart{
     display: inline-block;
